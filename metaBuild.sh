@@ -1,8 +1,9 @@
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+PREFIX=$DIR/.libs
 
 if [ "$1" = "build" ]; then
   (cd $DIR && \
-    ./autogen.sh --without-zlib --without-iconv && \
+    ./configure --libdir=$PREFIX --without-zlib --without-iconv --without-python --disable-static --enable-shared && \
     make)
 elif [ "$1" = "clean" ]; then
   (cd $DIR && \
