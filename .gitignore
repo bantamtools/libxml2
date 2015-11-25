@@ -119,3 +119,7 @@ xstc/Makefile
 xstc/Makefile.in
 xstc/Tests
 xstc/xsts-*.tar.gz
+
+*.exe
+compile
+libxml2-config.cmake
