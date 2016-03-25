@@ -1,4 +1,9 @@
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+SYSTEM_NAME=`uname -s`
+
+if [ "$SYSTEM_NAME" = "Darwin" ];then
+  export LIBTOOLIZE=glibtoolize
+fi
 
 if [ "$1" = "build" ]; then
   (cd $DIR && \
