@@ -65,7 +65,6 @@ ltmain.sh
 log
 missing
 missing.lst
-m4
 python/.deps
 python/.libs
 python/Makefile
