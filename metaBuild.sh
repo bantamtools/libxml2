@@ -7,7 +7,7 @@ fi
 
 if [ "$1" = "build" ]; then
   (cd $DIR && \
-    ./autogen.sh --libdir=$DIR/.libs --without-zlib --without-iconv --disable-static --enable-shared --without-python && \
+    ./autogen.sh --libdir=$DIR/.libs --without-zlib --without-lzma --without-iconv --disable-static --enable-shared --without-python && \
     make)
 elif [ "$1" = "clean" ]; then
   (cd $DIR && \
