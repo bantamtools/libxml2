@@ -70,6 +70,7 @@ python/.libs
 python/Makefile
 python/Makefile.in
 python/gen_prog
+python/setup.py
 python/libxml2-export.c
 python/libxml2-py.c
 python/libxml2-py.h
@@ -122,3 +123,4 @@ xstc/xsts-*.tar.gz
 *.exe
 compile
 libxml2-config.cmake
+m4/*
