@@ -5,7 +5,7 @@ if [ "$SYSTEM_NAME" = "Darwin" ];then
   export LIBTOOLIZE=glibtoolize
 fi
 
-if [ "$1" = "build" ]; then
+if [ "$1" = "release" -o "$1" = "debug" ]; then
   (cd $DIR && \
     ./autogen.sh --libdir=$DIR/.libs --without-zlib --without-lzma --without-iconv --disable-static --enable-shared --without-python && \
     make)
